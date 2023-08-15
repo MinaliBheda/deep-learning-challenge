@@ -1,3 +1,7 @@
+Overview:
+1.Explain the purpose of this analysis.
+The purpose of this analysis was to create a model to help the nonprofit foundation Alphabet Soup to select the applicants for funding with the best chance of success in their ventures.
+Results:
 Data Preprocessing
 
 1.What variable(s) are the target(s) for your model?
@@ -14,11 +18,41 @@ Compiling, Training, and Evaluating the Model
 1.How many neurons, layers, and activation functions did you select for your neural network model, and why?
 A.In the first attempt,  8 hidden_nodes_layer1 and 5 hidden_nodes_layer2 were used , these were just random guesses from which to iterate upon in the second try.
 
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 80)                3520      
+_________________________________________________________________
+dense_1 (Dense)              (None, 30)                2430      
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 31        
+=================================================================
+
 2.Were you able to achieve the target model performance?
-No, the 75% model accuracy target was not achieved by the model ,it could only reach to 72% accuracy 
+A.No, the 75% model accuracy target was not achieved by the model ,it could only reach to 72.63% accuracy 
+
+8575/8575 - 0s - loss: 0.5578 - acc: 0.7263
+Loss: 0.557812534073699, Accuracy: 0.7262973785400391
 
 3.What steps did you take in your attempts to increase model performance?
 A.More layers were added, removed more columns, added additional hidden nodes, and switched up the activation functions associated with each layer in an attempt to achieve higher model accuracy to 73% from 72%.
+
+Model: "sequential_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_25 (Dense)            (None, 20)                800       
+                                                                 
+ dense_26 (Dense)            (None, 20)                420       
+                                                                 
+ dense_27 (Dense)            (None, 20)                420       
+                                                                 
+ dense_28 (Dense)            (None, 1)                 21        
+                                                                 
+=================================================================
+
+268/268 - 0s - loss: 0.5613 - accuracy: 0.7303 - 199ms/epoch - 742us/step
+Loss: 0.5612643361091614, Accuracy: 0.7302623987197876
 
 Summary: 
 
